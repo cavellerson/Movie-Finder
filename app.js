@@ -1,7 +1,12 @@
   $('#submit').on('click', (event)=>{
     event.preventDefault();
     const userInput = $('input[type="text"]').val();
-
+    $('.movie-img').empty();
+    $('.movie-title').empty();
+    $('.misc-info').empty();
+    $('.movie-plot').empty();
+    $('#add').remove();
+    // for (let movie of $('.playlist-images'))
     $.ajax({
         url:'https://www.omdbapi.com/?apikey=53aa2cd6&t=' + userInput
     }).then(
@@ -23,16 +28,32 @@
               $('.movie-plot').text(`${data.Plot}`);
               //add to playlist button
               const $addToPlaylist = $('<button>').text('Add to Playlist').appendTo(".main-container").attr('id', 'add');
+
+
               $('#add').on('click', () => {
-                 $('.movie-img').appendTo(".movie-playlist");
+                 $('.movie-img').empty();
                  $('.movie-title').empty();
                  $('.misc-info').empty();
                  $('.movie-plot').empty();
                  $('#add').remove();
-                 $('.movie-playlist>h1').css("display", "block");
-                 $img.appendTo(".movie-playlist");
+                 $('.movie-playlist').css("display", "block");
+                 const $playlistImg = $('<img>').attr('src', data.Poster).appendTo('.playlist-images');
+                 console.log($('.playlist-images').children().eq(0));
+                 if ($('.playlist-images').children().length > 0) {
+                   $('#clear-button').css('display', 'block');
+                 }
+               })
 
-                })
+
+
+
+              $('#clear-button').on('click', () => {
+                $('.playlist-images').empty();
+                $('#clear-button').css('display', 'none');
+                $('.movie-playlist').css('display', 'none');
+              })
+
+
 
               }
 

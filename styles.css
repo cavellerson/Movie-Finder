@@ -1,3 +1,11 @@
-.movie-playlist>h1 {
+.movie-playlist {
+  display: none;
+}
+
+#remove-button {
+  display: none;
+}
+
+#clear-button {
   display: none;
 }
