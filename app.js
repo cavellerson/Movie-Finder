@@ -7,6 +7,7 @@
   $('#submit').on('click', (event)=>{
     event.preventDefault();
     const userInput = $('input[type="text"]').val();
+    $('.main-container').css('display', 'block');
     $('.movie-img').empty();
     $('.movie-title').empty();
     $('.misc-info').empty();
@@ -51,7 +52,7 @@
                  numOfImages = $('.playlist-images').children().length;
                  $('.main-container').css('background-color', 'rgba(0, 0, 0, 0)');
                  $('.playlist-images>img').css('border', '2px solid ivory');
-
+                 $('.main-container').css('display', 'none');
                })
                }
 

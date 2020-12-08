@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
+::placeholder {
+  text-align: center;
+}
 
 .movie-playlist>h1 {
   display: none;
 }
+
 
 button {
   font-family: 'Special Elite', cursive;
@@ -132,11 +136,14 @@ img {
     height: 100%;
     overflow: hidden;
 } */
-html {
+  html {
     background-size: cover;
     height: 100%;
     overflow: scroll;
-}
+  }
+  #userInput.placeholder{
+    text-align: center;
+  }
   .search>h1 {
     font-size: 100%;
     text-align: center;
@@ -146,6 +153,7 @@ html {
     display: flex;
     justify-content: center;
   }
+
   #userInput {
     width: 80%;
     margin: auto;
@@ -184,4 +192,19 @@ html {
   .buttons>button {
     margin: auto;
 
+  }
+
+  .movie-playlist {
+    margin: 0
+  }
+
+  #add {
+    width: 40%;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .movie-plot {
+    margin: 0px 5% 5% 5%;
+    font-size: 80%;
   }
