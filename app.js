@@ -13,6 +13,7 @@
     $('.misc-info').empty();
     $('.movie-plot').empty();
     $('#add').remove();
+    $('main-container').css('display', 'block');
 
 
 
