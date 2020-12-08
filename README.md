@@ -1,5 +1,5 @@
 The thought process for this Project was something that took me a lot of time to do... I am definitely by far, the least creative individual when it comes to ideas but I am improving -- to an extent. Initially, I really wanted to do the Movie Project in a certain way but was limited to via the api.
 
-https://cavellerson.github.io/Movie-Project/
+https://cavellerson.github.io/Movie-Finder/
 
 Unsolved problems? I had a difficult time implementing the search bar to work using the enter key after typing, I know I have to check the key code on the click event (I included this code on the bottom of the js file) but for some reason, Ajax wouldn't work when I tried.. Perhaps I'll try to improve it later. I also had a lot of issues with getting the carousel to work because I would console log the current image indices and even checked for edge cases,  but the console would display several instances of the command and our Ta Michael and I couldn't figure it out besides the fact that I might have made things worse by including majority if not all, of my code within an else statement of accessing the OMDB api. 
