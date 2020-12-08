@@ -10,9 +10,17 @@ button {
   padding: .5em;
   border-radius: 10px;
   line-height: 10px;
-  background-color: azure;
+  background-color: #DF00FE;
   margin: 1em;
+  color: white;
 }
+
+
+
+button:hover {
+  background-color: #BE00FE;
+}
+
 input>placeholder {
   font-family: 'Special Elite', cursive;
 }
@@ -37,8 +45,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  background-image: url('683979.jpg');
+  background-image: url('background.jpg');
   font-family: 'Special Elite', cursive;
+  background-size: cover;
 }
 
 
@@ -110,6 +119,10 @@ body {
 
 }
 
+img {
+  border: 2px solid ivory;
+}
+
 @media (min-width: 500px) {
  /* any other css rules can go in here as normal, for example: */
   body {
@@ -125,4 +138,8 @@ body {
   img {
     max-width: 100%;
     display: block;
+  }
+
+  .movie-info {
+    font-size: 100%;
   }

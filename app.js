@@ -12,6 +12,8 @@
     $('input[type="text"]').val('');
     $('.main-container').css('background-color', 'rgba(0, 0, 0, 0.5)');
 
+
+
     $.ajax({
         url:'https://www.omdbapi.com/?apikey=53aa2cd6&t=' + userInput
     }).then(
