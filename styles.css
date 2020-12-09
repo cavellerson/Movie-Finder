@@ -88,6 +88,7 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%:
+  margin: 1em;
 }
 
 .misc-info>h4 {
@@ -128,6 +129,9 @@ img {
   margin: 0 10em 0 5em;
 }
 
+.movie-plot {
+  font-size: 100%;
+}
 
 @media (max-device-width: 480px) {
 
