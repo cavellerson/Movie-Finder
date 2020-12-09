@@ -7,13 +7,12 @@
   $('#submit').on('click', (event)=>{
     event.preventDefault();
     const userInput = $('input[type="text"]').val();
-    $('.main-container').css('display', 'block');
+    $('.main-container').css('display', 'flex');
     $('.movie-img').empty();
     $('.movie-title').empty();
     $('.misc-info').empty();
     $('.movie-plot').empty();
     $('#add').remove();
-    $('main-container').css('display', 'block');
 
 
 

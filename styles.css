@@ -55,13 +55,6 @@ body {
 }
 
 
-.main-container {
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  margin: 0 10em 0 5em;
-}
-
 .search {
   display: flex;
   flex-direction: column;
@@ -127,15 +120,17 @@ img {
   border: 2px solid ivory;
 }
 
-@media (min-width: 300px) {
-  /* html {
-    background: url('background.jpg');
-    background-repeat: no-repeat;
-    background-position: center center fixed;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-} */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 10em 0 5em;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
   html {
     background-size: cover;
     height: 100%;
