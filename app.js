@@ -7,7 +7,6 @@
   $('#submit').on('click', (event)=>{
     event.preventDefault();
     const userInput = $('input[type="text"]').val();
-    $('.main-container').css('display', 'flex');
     $('.movie-img').empty();
     $('.movie-title').empty();
     $('.misc-info').empty();
@@ -26,8 +25,11 @@
             if (data.Response === "False" || data.Error === "Movie not found!") {
               alert('Movie not found!');
               $("#userInput").val('');
+              $('.main-container').css('display', 'none');
+
             }
             else {
+              $('.main-container').css('display', 'flex');
               const $img = $('<img>').attr('src', data.Poster).appendTo('.movie-img');
               $('.movie-title').append(data.Title);
 
