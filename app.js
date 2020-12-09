@@ -92,6 +92,19 @@
       $('.movie-playlist>h1').css('display', 'none');
       $('.main-container').css('background-color', 'rgba(0, 0, 0, 0)');
     })
+
+    $('#userInput').keypress(
+      function(event){
+      let keycode = (event.keyCode ? event.keyCode : event.which);
+
+      if(keycode === 13){
+        alert("I know you want to use enter to search but that function is not available... P.S. It'll be functioning SOON! For now, just press the search button");
+
+
+      }
+
+    });
+
   ////////
   //END//
   //////
