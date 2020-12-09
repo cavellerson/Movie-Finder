@@ -51,7 +51,7 @@
                  alert(`${data.Title} has been added to your playlist!`);
                  numOfImages = $('.playlist-images').children().length;
                  $('.main-container').css('background-color', 'rgba(0, 0, 0, 0)');
-                 $('.playlist-images>img').css('border', '2px solid ivory');
+                 $('.playlist-images>img').css('border', '2px solid #39FF14');
                  $('.main-container').css('display', 'none');
                })
                }
@@ -92,8 +92,10 @@
       $('.main-container').css('background-color', 'rgba(0, 0, 0, 0)');
     })
 
+    //not sure why enter clears the page/gives 405 error but i'm trying to catch this error and not display it but it still plays.
     $('#userInput').keypress(
       function(event){
+        event.stopPropagation();
       let keycode = (event.keyCode ? event.keyCode : event.which);
 
       if(keycode === 13){

@@ -117,7 +117,7 @@ body {
 }
 
 img {
-  border: 2px solid ivory;
+  border: 2px solid #39FF14;
 }
 
 
@@ -129,7 +129,7 @@ img {
 }
 
 
-@media only screen and (max-device-width: 480px) {
+@media (max-device-width: 480px) {
 
   html {
     background-size: cover;
@@ -202,4 +202,9 @@ img {
   .movie-plot {
     margin: 0px 5% 5% 5%;
     font-size: 80%;
+  }
+
+  .misc-info {
+    font-size: 50%;
+    padding: 1em 0 1em 0;
   }
