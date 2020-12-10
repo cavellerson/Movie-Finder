@@ -1,10 +1,9 @@
 ///////////////////////
 //THIS PROJECT WORKS//
 /////////////////////
-
   let currentImgIndex = 0;
   let numOfImages = 0;
-  $('#submit').on('click', (event)=>{
+  $('.search-movies').on('submit', (event)=>{
     event.preventDefault();
     const userInput = $('input[type="text"]').val();
     $('.movie-img').empty();
@@ -229,7 +228,7 @@
     //attempt to make enter keypress work
     // $('#userInput').keypress(
     //   function(event){
-    //     event.stopPropagation();
+    //     event.preventDefault();
     //     const userInput = $('input[type="text"]').val();
     //   if (event.keyCode === 13) {
     //     debugger;
