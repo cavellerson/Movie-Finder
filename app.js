@@ -5,7 +5,7 @@ let currentImgIndex = 0;
 let numOfImages = 0;
 $('.search-movies').on('submit', (event)=>{
   event.preventDefault();
-  const userInput = $('input[type="text"]').val();
+  const userInput = $('#userInput').val();
   $('.movie-img').empty();
   $('.movie-title').empty();
   $('.misc-info').empty();
