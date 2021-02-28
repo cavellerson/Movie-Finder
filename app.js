@@ -52,7 +52,7 @@ $('.search-movies').on('submit', (event)=>{
                alert(`${data.Title} has been added to your playlist!`);
                numOfImages = $('.playlist-images').children().length;
                $('.main-container').css('background-color', 'rgba(0, 0, 0, 0)');
-               $('.playlist-images>img').css('border', '2px solid #39FF14');
+               $('.playlist-images>img').css('border', '2px solid rgb(103,151,117);');
                $('.main-container').css('display', 'none');
              })
              }
