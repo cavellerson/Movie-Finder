@@ -92,24 +92,3 @@ $('.search-movies').on('submit', (event)=>{
     $('.movie-playlist>h1').css('display', 'none');
     $('.main-container').css('background-color', 'rgba(0, 0, 0, 0)');
   })
-
-
-
-// attempt to make enter keypress work
-$('#userInput').keypress(
-  function(event){
-    event.stopImmediatePropagation();
-    event.stopPropagation();
-    event.preventDefault();
-
-    const userInput = $('input[type="text"]').val();
-    if (event.keyCode === 13) {
-      $.ajax({
-        url:'https://www.omdbapi.com/?apikey=53aa2cd6&t=' + userInput
-      }).then((data) => {
-        console.log('hello');
-      })
-    }
-
-    return false;
-  });
